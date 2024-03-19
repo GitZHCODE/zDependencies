@@ -1,5 +1,7 @@
 function get_include_dirs()
     local IncludeDir = {}
+    IncludeDir["DEPS"]              = "."
+
     IncludeDir["ARMADILLO"]         = "Armadillo"
     IncludeDir["EIGEN"]             = "Eigen"
     IncludeDir["EIGEN_UNSUPPORTED"] = "Eigen_Unsupported/Eigen"

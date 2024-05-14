@@ -3,6 +3,8 @@ This repository is a collection of dependencies for the [zspace_core](https://gi
 
 - [**OPENGL**](https://www.opengl.org/about/) for display methods. End users, independent software vendors, and others writing code based on the OpenGL API are free from licensing requirements.
 
+- [**Omniverse**](https://www.nvidia.com/en-gb/omniverse/) for OpenUSD interop.
+
 - [**Eigen**](https://github.com/eigenteam/eigen-git-mirror) for matricies and related methods. It is an open source project licensed under
 [MPL2](https://www.mozilla.org/MPL/2.0/).
 
@@ -27,3 +29,6 @@ This repository is a collection of dependencies for the [zspace_core](https://gi
 
 - [**IGL**](https://libigl.github.io/tutorial/) for geometry processing. It is a project licensed under 
 [MPL2](https://www.mozilla.org/MPL/2.0/).
+
+- [**Quickhull**](https://github.com/karimnaaji/3d-quickhull) for quickhull implementation. Licensed under 
+[MIT License](https://opensource.org/licenses/MIT).

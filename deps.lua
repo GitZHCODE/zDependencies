@@ -15,13 +15,6 @@ function get_include_dirs()
     IncludeDir["TOOJPEG"]           = "tooJPEG"
     IncludeDir["IGL"]               = "igl/headers"
 
-    --OV INCLUDES
-    IncludeDir["OV_CLIENT"]         = "omniverse/omni_client_library/include"
-    IncludeDir["OV_USD_RES"]        = "omniverse/omni_usd_resolver/include"
-    IncludeDir["OV_PYTHON"]         = "omniverse/python/include"
-    IncludeDir["OV_TINYTOML"]       = "omniverse/tinytoml/include"
-    IncludeDir["OV_USD"]            = "omniverse/usd/release/include"
-
     return IncludeDir
 end
 
@@ -30,12 +23,30 @@ function get_lib_dirs()
     LibDir["SQLITE"]          = "SQLITE/lib"
     LibDir["IGL"]             = "igl/build/lib"
 
-    --OV LIBS
-    LibDir["OV_CLIENT"]         = "omniverse/omni_client_library/release"
-    LibDir["OV_USD_RES"]        = "omniverse/omni_usd_resolver/release"
-    LibDir["OV_PYTHON"]         = "omniverse/python/libs"
-    LibDir["OV_USD"]            = "omniverse/usd/release/lib"
     return LibDir
+end
+
+function get_omniverse_includes()
+    local OmniIncludes = {}
+
+    OmniIncludes["OV_CLIENT"]         = "omniverse/omni_client_library/include"
+    OmniIncludes["OV_USD_RES"]        = "omniverse/omni_usd_resolver/include"
+    OmniIncludes["OV_PYTHON"]         = "omniverse/python/include"
+    OmniIncludes["OV_TINYTOML"]       = "omniverse/tinytoml/include"
+    OmniIncludes["OV_USD"]            = "omniverse/usd/release/include"
+
+    return OmniIncludes
+end
+
+function get_omniverse_libdirs()
+    local OmniLibDirs = {}
+
+    OmniLibDirs["OV_CLIENT"]         = "omniverse/omni_client_library/release"
+    OmniLibDirs["OV_USD_RES"]        = "omniverse/omni_usd_resolver/release"
+    OmniLibDirs["OV_PYTHON"]         = "omniverse/python/libs"
+    OmniLibDirs["OV_USD"]            = "omniverse/usd/release/lib"
+
+    return OmniLibDirs
 end
 
 function get_omniverse_links()
@@ -65,5 +76,6 @@ function get_omniverse_links()
     "work.lib",
     "shlwapi.lib",
     }
+
     return omnilinks
 end

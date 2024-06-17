@@ -1,4 +1,4 @@
-function get_include_dirs()
+function get_zspace_include_dirs()
     local IncludeDir = {}
     IncludeDir["DEPS"]              = "."
 
@@ -15,10 +15,13 @@ function get_include_dirs()
     IncludeDir["TOOJPEG"]           = "tooJPEG"
     IncludeDir["IGL"]               = "igl/headers"
 
+    IncludeDir["RHINOSDK"]          = "%{rhino_dir}/inc"
+    IncludeDir["MAYA"]              = "%{maya_dir}/include"
+
     return IncludeDir
 end
 
-function get_lib_dirs()
+function get_zspace_lib_dirs()
     local LibDir = {}
     LibDir["SQLITE"]          = "SQLITE/lib"
     LibDir["IGL"]             = "igl/build/lib"
